@@ -9,7 +9,7 @@ const USERNAME_KEY = "username";
 
 // function for login button click
 function onLoginSubmit(event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent from refresh after clicking submit button
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username); // Store key & value to the local storage
