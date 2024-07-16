@@ -1,3 +1,4 @@
+// Quote list
 const quotes = [
     {
       quote: "The way to get started is to quit talking and begin doing.",
@@ -42,9 +43,9 @@ const quotes = [
     },
   ];
   
-  const quote = document.querySelector("#quote span:first-child");
-  const author = document.querySelector("#quote span:last-child");
-  const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const quote = document.querySelector("#quote span:first-child"); // Select first span for a quote
+  const author = document.querySelector("#quote span:last-child"); // Select last span (second) for an author
+  const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; // Random quote appears on the web page
   
-  quote.innerText = todaysQuote.quote;
-  author.innerText = todaysQuote.author;
+  quote.innerText = todaysQuote.quote; // Add quote from JS to html
+  author.innerText = todaysQuote.author; // Add author next to the quote from JS to html
